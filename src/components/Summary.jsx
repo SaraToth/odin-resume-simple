@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../styles/Summary.css"
 
 export default function Summary() {
     const [summary, setSummary] = useState(

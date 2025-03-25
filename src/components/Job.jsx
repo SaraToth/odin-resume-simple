@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../styles/Job.css"
 
 export default function Job({setJobs, setShowJobForm, }) {
     

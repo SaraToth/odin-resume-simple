@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Job from "./Job"
+import "../styles/Experience.css"
 
 export default function Experience() {
     const [jobs, setJobs] = useState([])

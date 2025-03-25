@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Degree from "./Degree";
+import "../styles/Education.css"
 
 export default function Education() {
     const [degrees, setDegrees] = useState([])

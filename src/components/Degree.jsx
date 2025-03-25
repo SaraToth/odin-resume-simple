@@ -1,4 +1,5 @@
 import { useState } from "react";
+import '../styles/Degree.css'
 
 export default function Degree({setDegrees, setShowDegreeForm }) {
     

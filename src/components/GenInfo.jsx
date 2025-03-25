@@ -1,4 +1,5 @@
 import { useState } from "react"
+import "../styles/GenInfo.css"
 
 export default function GenInfo() {
     const [genInfo, setGenInfo] = useState(
