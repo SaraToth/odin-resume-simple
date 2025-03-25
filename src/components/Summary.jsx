@@ -31,9 +31,11 @@ export default function Summary() {
     return(
         <div className="form-container-summary">
             <form onSubmit={submitSummary}>
-            <h1>Career Summary</h1>
+            <div className="form-box-summary">
+            <h2>Career Summary</h2>
             <textarea name="summary" id="summary" value={summary.summary} onChange={handleChange} required placeholder="Type your professional summary"></textarea>
-                <button type="submit" className="submit-btn">Submit</button>
+            <button type="submit" className="submit-btn">Submit</button>
+            </div>
             </form>
         </div>
     )

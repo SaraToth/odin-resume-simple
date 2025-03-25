@@ -35,7 +35,7 @@ export default function GenInfo() {
     return (
         <div className="form-container-geninfo">
             <form onSubmit={submitGenInfo}>
-                <h1>General Information</h1>
+                <h1>Resume</h1>
                 <div className="form-content">
 
                     <div className="form-row">

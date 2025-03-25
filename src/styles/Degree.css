@@ -1,3 +1,8 @@
 .item-container-degree {
 border: 1px solid black;
 }
+
+.form-container-degree form {
+    display: flex;
+    flex-direction: column;
+}

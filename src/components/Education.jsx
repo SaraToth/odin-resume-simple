@@ -11,7 +11,7 @@ export default function Education() {
     }
     return(
         <div className="form-container-education">
-            <h1>Education</h1>
+            <h2>Education</h2>
             <div>
                 {degrees && degrees.map((degree)=> {
                     return(

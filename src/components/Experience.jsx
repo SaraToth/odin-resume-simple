@@ -12,7 +12,7 @@ export default function Experience() {
 
     return(
         <div className="form-container-experience">
-            <h1>Work Experience</h1>
+            <h2>Work Experience</h2>
             <div>
                 
             {jobs && jobs.map((job)=> 

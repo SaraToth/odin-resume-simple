@@ -34,7 +34,7 @@ export default function Degree({setDegrees, setShowDegreeForm }) {
 
 
     return(
-        <div className="form-container-job">
+        <div className="form-container-degree">
             <form onSubmit={submitDegree}>
                 <label htmlFor="degree">Degree</label>
                 <input type="text" id="degree" name="degree" value={degree.degree} onChange={handleChange} required></input>

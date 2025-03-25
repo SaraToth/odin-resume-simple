@@ -1,7 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 25px;
+}
 
+.submit-btn, .add-btn {
+  background-color: lightgray;
+  height: 40px;
+  width: 80px;
+  border-style:dashed;
+}
 
-
-
-
-
+.submit-btn:hover, .add-btn:hover {
+  cursor: pointer;
+  background-color:gray;
+}
