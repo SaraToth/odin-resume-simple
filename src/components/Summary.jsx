@@ -1,42 +1,22 @@
 import { useState } from "react";
 import "../styles/Summary.css"
+import SumForm from "./SumForm";
 
 export default function Summary() {
-    const [summary, setSummary] = useState(
-        {
-            summary: "",
-        }
-    )
-
-    const handleChange = (e) => {
-        const newFormData = {
-            ...summary,
-            [e.target.name]: e.target.value,
-        }
-        setSummary(newFormData);
-    }
-
-
-    const submitSummary = (e) => {
-        e.preventDefault();
-        const newFormData = {
-            ...summary,
-            [e.target.name]: e.target.value,
-        }
-
-        setSummary(newFormData);
-        console.log(JSON.stringify(summary));
-    }
+    const [showSumForm, setShowSumForm] = useState(true);
+    const [sumInfo, setSumInfo] = useState({})
 
     return(
-        <div className="form-container-summary">
-            <form onSubmit={submitSummary}>
-            <div className="form-box-summary">
-            <h2>Career Summary</h2>
-            <textarea name="summary" id="summary" value={summary.summary} onChange={handleChange} required placeholder="Type your professional summary"></textarea>
-            <button type="submit" className="submit-btn">Submit</button>
+        <div>
+            <div>
+                {sumInfo && 
+                    // Key needs to be updated to UUID
+                    <div className="sum item-container-sum" key={sumInfo.summary}> 
+                    <p>{sumInfo.summary}</p>
+                </div>
+                }
             </div>
-            </form>
+            {showSumForm && <SumForm setSumInfo={setSumInfo} setShowSumForm={setShowSumForm} />}
         </div>
     )
 
