@@ -20,3 +20,15 @@ body {
   cursor: pointer;
   background-color:gray;
 }
+
+/* Hide buttons when printing */
+@media print {
+  .submit-btn {
+    display: none;
+  }
+
+  .add-btn {
+    display: none;
+  }
+
+}
