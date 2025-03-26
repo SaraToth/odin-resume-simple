@@ -9,16 +9,21 @@ body {
   padding: 25px 25px;
 }
 
-.submit-btn, .add-btn {
+.submit-btn, .add-btn, .print-btn {
   background-color: lightgray;
   height: 40px;
   width: 80px;
   border-style:dashed;
 }
 
-.submit-btn:hover, .add-btn:hover {
+.submit-btn:hover, .add-btn:hover, .print-btn:hover {
   cursor: pointer;
   background-color:gray;
+}
+
+.print-mode .submit-btn,
+.print-mode .add-btn {
+  display: none;
 }
 
 /* Hide buttons when printing */
