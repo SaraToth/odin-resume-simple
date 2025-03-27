@@ -35,7 +35,7 @@ export default function InfoForm({setGenInfo, setShowGenInfoForm}) {
     }
 
     return(
-        <div className="form-container-geninfo">
+        <div className="form-info">
             <form onSubmit={submitInfo}>
                 <h1>Resume</h1>
                 <div className="form-content">

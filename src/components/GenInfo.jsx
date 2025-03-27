@@ -7,25 +7,22 @@ export default function GenInfo() {
     const [showGenInfoForm, setShowGenInfoForm] = useState(true);
 
     return (
-        <div className="form-container-geninfo">
-            <div>
-            {genInfo && 
+        <div className="geninfo-container">
+            <div className="infos-container">
+                {Object.keys(genInfo).length > 0 && 
 
-                        // Key needs to be updated to UUID
-                        <div className="info item-container-info" key={genInfo.title}> 
+                    // Key needs to be updated to UUID
+                    <div className="display-info" key={genInfo.title}> 
+                        <div>
                             <h1>{genInfo.first} {genInfo.last}</h1>
                             <h3>{genInfo.title}</h3>
                             <p>{genInfo.phone} {genInfo.email}</p>
                         </div>
+                        <button type="submit" className="edit-btn">Edit</button>
+                    </div>
                 }
             </div>
-
-            {Object.keys(genInfo).length > 0 && 
-                <div className="btns">
-                    <button type="submit" className="edit-btn">Edit</button>
-                </div>}
-            
-            {showGenInfoForm && <InfoForm setGenInfo={setGenInfo} setShowGenInfoForm={setShowGenInfoForm} />}
+            {showGenInfoForm && <InfoForm setGenInfo={setGenInfo} setShowGenInfoForm={setShowGenInfoForm} />}      
         </div>
     )
 }

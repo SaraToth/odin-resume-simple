@@ -29,10 +29,10 @@ export default function Experience() {
                     )
                 }
                 )}
-                {showJobForm && <Job setJobs={setJobs} setShowJobForm={setShowJobForm} />}
+            {showJobForm && <Job setJobs={setJobs} setShowJobForm={setShowJobForm} />}
             </div>
             <div className="btns">
-            <button type="submit" className="add-btn" onClick={handleJobForm}>Add</button>
+                <button type="submit" className="add-btn" onClick={handleJobForm}>Add</button>
             </div>
         </div>
     )
