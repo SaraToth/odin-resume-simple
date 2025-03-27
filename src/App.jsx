@@ -22,8 +22,8 @@ function App() {
         <Summary />
         <Experience />
         <Education />
-        {(!printPreview) && <button type='submit' onClick={printPreviewOn} className='print-btn'>Print Preview</button>}
-        {printPreview && <button type="submit" onClick={printPreviewOff} className='print-btn'>Close Print Preview</button>}
+        {(!printPreview) && <button type='submit' onClick={printPreviewOn} className='btn print-btn'>Print Preview</button>}
+        {printPreview && <button type="submit" onClick={printPreviewOff} className='btn print-btn'>Close Print Preview</button>}
     </div>
   )
 }
