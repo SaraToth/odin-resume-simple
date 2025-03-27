@@ -33,13 +33,14 @@ h3 {
   border-style:dashed;
 }
 
-.submit-btn:hover, .add-btn:hover, .edit-btn:hover .print-btn:hover {
+.submit-btn:hover, .add-btn:hover, .edit-btn:hover, .print-btn:hover {
   cursor: pointer;
   background-color:gray;
 }
 
 .print-mode .submit-btn,
-.print-mode .add-btn {
+.print-mode .add-btn,
+.print-mode .edit-btn {
   display: none;
 }
 
@@ -65,3 +66,19 @@ h3 {
   justify-content: center;
   align-items: center;
 }
+
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Sends edit btn to the far right for each job */
+/* Padding-right makes sure edit and add btns don't touch */
+.display-job {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+

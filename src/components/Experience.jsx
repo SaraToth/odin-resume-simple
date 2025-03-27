@@ -11,17 +11,20 @@ export default function Experience() {
     }
 
     return(
-        <div className="form-container-experience">
-            <div className="jobs">
+        <div className="experience-container">
+            <div className="jobs-container">
             <h2>Professional Experience</h2>
             {jobs && jobs.map((job)=> 
                 {   
                     return(
                         // Key needs to be updated to UUID
-                        <div className="job item-container-job" key={job.title}> 
-                            <h3>{job.title} at {job.company}</h3>
-                            <p className="date"><i>{job.startDate} - {job.endDate}</i></p>
-                            <p className="job-desc">{job.description}</p>
+                        <div className="display-job" key={job.title}>
+                            <div>
+                                <h3>{job.title} at {job.company}</h3>
+                                <p className="date"><i>{job.startDate} - {job.endDate}</i></p>
+                                <p className="job-desc">{job.description}</p>
+                            </div>
+                            <button type="submit" className="edit-btn">Edit</button> 
                         </div>
                     )
                 }

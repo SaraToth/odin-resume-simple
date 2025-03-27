@@ -36,8 +36,7 @@ export default function Job({setJobs, setShowJobForm, }) {
 
 
     return(
-        <div className="form-container-job">
-            <form onSubmit={submitJob}>
+            <form className="form-job" onSubmit={submitJob}>
             <label htmlFor="title">Title:</label>
                 <input type="text" id="title" name="title" value={job.title} onChange={handleChange} required></input>
 
@@ -55,6 +54,5 @@ export default function Job({setJobs, setShowJobForm, }) {
                     <button type="submit" className="submit-btn">Submit</button>
                 </div>
             </form>
-        </div>
     )
 }

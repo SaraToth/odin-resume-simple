@@ -1,5 +1,12 @@
-.job-date {
-  padding-bottom: 2px;
+.experience-container {
+  border: 1px solid;
+  display: flex;
+  min-height: 100px; /* Height when empty */
+  /* justify-content: space-between; */
+}
+
+.jobs-container {
+  flex: 1;
 }
 
 .job-desc {
