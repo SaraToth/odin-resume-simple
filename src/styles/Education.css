@@ -1,0 +1,11 @@
+.form-container-experience {
+  border: 1px solid;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

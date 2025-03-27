@@ -51,8 +51,9 @@ export default function Job({setJobs, setShowJobForm, }) {
                 <input type="date" id="end" name="endDate" value={job.endDate} onChange={handleChange} required></input>
                 
                 <textarea name="description" id="description" value={job.description} onChange={handleChange} required placeholder="Type your job description here"></textarea>
-                
-                <button type="submit" className="submit-btn">Submit</button>
+                <div className="submit-btns">
+                    <button type="submit" className="submit-btn">Submit</button>
+                </div>
             </form>
         </div>
     )

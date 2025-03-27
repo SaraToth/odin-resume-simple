@@ -17,8 +17,8 @@ export default function Education() {
                     return(
                         // Key needs to be updated to UUID
                         <div className="degree item-container-degree" key={degree.degree}>
-                            <h2>{degree.degree}</h2>
-                            <p>{degree.school} {degree.gradDate}</p>
+                            <h3>{degree.degree}</h3>
+                            <p>{degree.school} <i>{degree.gradDate}</i></p>
                         </div>
                     )
                 })}

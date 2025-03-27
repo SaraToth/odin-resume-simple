@@ -9,14 +9,31 @@ body {
   padding: 25px 25px;
 }
 
-.submit-btn, .add-btn, .print-btn {
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+h3 {
+  padding-bottom: 5px;
+}
+
+.date {
+  padding-bottom: 2px;
+}
+
+.submit-btn, .add-btn, .edit-btn, .print-btn {
   background-color: lightgray;
   height: 40px;
   width: 80px;
   border-style:dashed;
 }
 
-.submit-btn:hover, .add-btn:hover, .print-btn:hover {
+.submit-btn:hover, .add-btn:hover, .edit-btn:hover .print-btn:hover {
   cursor: pointer;
   background-color:gray;
 }
@@ -36,4 +53,15 @@ body {
     display: none;
   }
 
+  .edit-btn {
+    display: none;
+  }
+
+}
+
+
+.submit-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
