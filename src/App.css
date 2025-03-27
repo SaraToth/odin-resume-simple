@@ -96,3 +96,12 @@ h4 {
     display: none;
   }
 }
+
+ul {
+  padding-left: 20px; /* Adjust padding to ensure the bullets line up correctly */
+  margin-left: 0;     /* Remove any unexpected margin */
+}
+
+li {
+  list-style-position: outside; /* Ensures the bullets are outside the list items */
+}

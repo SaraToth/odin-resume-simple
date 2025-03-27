@@ -19,10 +19,21 @@ export default function Experience() {
                         return(
                             // Key needs to be updated to UUID
                             <div className="display-job" key={job.title}>
-                                <div>
-                                    <h4>{job.title} at {job.company}</h4>
-                                    <p className="date"><i>{job.startDate} - {job.endDate}</i></p>
-                                    <p className="job-desc">{job.description}</p>
+                                <div className="job-info">
+                                    <div className="row">
+                                        <p><b>{job.title},</b> <i>{job.company}</i></p>
+                                        <p className="date"><i>{job.startDate} - {job.endDate}</i></p>
+                                    </div>
+                                    <p className="job-desc">
+                                    <ul>
+                                        {job.description &&
+                                            // Press enter after each sentence to create a new bullet
+                                            job.description.split("\n").map((line, index) =>
+                                                line.trim() ? <li key={index}>{line.trim()}</li> : null
+                                        )}
+                                    </ul>
+                                        </p>
+                                        {/* {job.description}</p> */}
                                 </div>
                                 <div className="edit-btn-container">
                                     <button type="submit" className="btn edit-btn">Edit</button> 

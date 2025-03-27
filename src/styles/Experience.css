@@ -22,7 +22,7 @@
 /* Container for each provided job */
 .display-job {
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
   margin-right: 40px;
   padding-right: 20px;
 
@@ -30,6 +30,10 @@
   border: 1px solid lightgray;
   padding-left: 20px;
   margin-bottom: 20px;
+}
+
+.job-info {
+  flex: 1;
 }
 
 /* Description under each job */
@@ -41,6 +45,9 @@
   border: none;
   padding-left: 0;
   margin-bottom: 0;
+  padding-right: 0;
+  margin-right: 0;
+  gap: 0;
 }
 
 @media print {
@@ -48,5 +55,15 @@
     border: none;
     padding-left: 0;
     margin-bottom: 0;
+    padding-right: 0;
+    margin-right: 0;
+    flex: 1;
+    gap: 0;
   }
+}
+
+
+.row {
+  display: flex;
+  justify-content: space-between;
 }

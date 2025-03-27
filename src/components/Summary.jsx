@@ -9,7 +9,8 @@ export default function Summary() {
     return(
         <div>
             <div>
-                {sumInfo && 
+                {sumInfo &&
+
                     // Key needs to be updated to UUID
                     <div className="sum item-container-sum" key={sumInfo.summary}> 
                     <p className="summary">{sumInfo.summary}</p>
