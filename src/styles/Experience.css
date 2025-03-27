@@ -1,28 +1,30 @@
+/* Professional Experience Section */
 .experience-container {
   border: 1px solid;
   display: flex;
   min-height: 100px; /* Height when empty */
-  /* justify-content: space-between; */
 }
 
+/* Holds all jobs content */
 .jobs-container {
   flex: 1;
 }
 
+/* Form to enter a new job */
 .form-job {
   display: flex;
   flex-direction: column;
   padding-right: 100px;  /* visual space between form and add button */
 }
 
-/* Sends edit btn to the far right for each job */
-/* Padding-right makes sure edit and add btns don't touch */
+/* Container for each provided job */
 .display-job {
   display: flex;
   justify-content: space-between;
   padding-right: 20px;
 }
 
+/* Description under each job */
 .job-desc {
   padding-bottom: 10px;
 }
