@@ -17,9 +17,12 @@ export default function Education() {
                     return(
                         // Key needs to be updated to UUID
                         <div className="display-degree" key={degree.degree}>
-                            <div>
-                                <h4>{degree.degree}</h4>
-                                <p>{degree.school} <i>{degree.gradDate}</i></p>
+                            <div className="degree-info">
+                            <div className="row">
+                                <p><b>{degree.degree}</b></p>
+                                <p><i>{degree.gradDate}</i></p>
+                            </div>
+                            <p>{degree.school}</p>
                             </div>
                             <button type="submit" className="btn edit-btn">Edit</button> 
                         </div>
