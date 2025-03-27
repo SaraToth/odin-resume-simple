@@ -53,10 +53,11 @@ h4 {
   background-color:gray;
 }
 
-.print-btn-container {
+.print-preview{
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding-top: 20px;
+  align-items: center;
 }
 
 /* Container with a submit-btn in it */
@@ -83,16 +84,13 @@ h4 {
   align-items: center;
 }
 
-/* Hide buttons when user clicks Print Preview */
-.print-mode .submit-btn,
-.print-mode .add-btn,
-.print-mode .edit-btn {
-  display: none;
-}
-
 /* Hide buttons when printing */
 @media print {
   .btn {
+    display: none;
+  }
+
+  .print-preview {
     display: none;
   }
 }

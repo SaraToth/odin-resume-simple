@@ -38,14 +38,6 @@
   padding-bottom: 10px;
 }
 
-.print-mode .display-degree {
-  border: none;
-  padding-left: 0;
-  margin-bottom: 0;
-  padding-right: 0;
-  margin-right: 0;
-  gap: 0;
-}
 
 @media print {
   .display-degree {
