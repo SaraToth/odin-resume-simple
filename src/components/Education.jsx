@@ -21,14 +21,14 @@ export default function Education() {
                                 <h3>{degree.degree}</h3>
                                 <p>{degree.school} <i>{degree.gradDate}</i></p>
                             </div>
-                            <button type="submit" className="edit-btn">Edit</button> 
+                            <button type="submit" className="btn edit-btn">Edit</button> 
                         </div>
                     )
                 })}
                 {showDegreeForm && <Degree setDegrees={setDegrees} setShowDegreeForm={setShowDegreeForm} />}
             </div>
-            <div className="btns">
-                <button type="submit" className="add-btn" onClick={handleDegreeForm}>Add</button>
+            <div className="add-btn-container">
+                <button type="submit" className="btn add-btn" onClick={handleDegreeForm}>Add</button>
             </div>
         </div>
     )

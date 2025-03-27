@@ -36,7 +36,7 @@ export default function SumForm({setSumInfo, setShowSumForm}) {
             <div className="form-box-summary">
             <h2>Career Summary</h2>
             <textarea name="summary" id="summary" value={summary.summary} onChange={handleChange} required placeholder="Type your professional summary"></textarea>
-            <button type="submit" className="submit-btn">Submit</button>
+            <button type="submit" className="btn submit-btn">Submit</button>
             </div>
             </form>
         </div>

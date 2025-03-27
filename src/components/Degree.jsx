@@ -43,8 +43,8 @@ export default function Degree({setDegrees, setShowDegreeForm }) {
                 <label htmlFor="gradDate">Graduation Date</label>
                 <input type="date" id="gradDate" name="gradDate" value={degree.gradDate} onChange={handleChange} required></input>
 
-                <div className="submit-btns">
-                    <button type="submit" className="submit-btn">Submit</button>
+                <div className="submit-btn-container">
+                    <button type="submit" className="btn submit-btn">Submit</button>
                 </div>
             </form>
     )

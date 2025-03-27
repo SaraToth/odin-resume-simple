@@ -18,7 +18,7 @@ export default function GenInfo() {
                             <h3>{genInfo.title}</h3>
                             <p>{genInfo.phone} {genInfo.email}</p>
                         </div>
-                        <button type="submit" className="edit-btn">Edit</button>
+                        <button type="submit" className="btn edit-btn">Edit</button>
                     </div>
                 }
             </div>

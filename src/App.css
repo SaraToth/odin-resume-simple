@@ -1,3 +1,5 @@
+/* General Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -22,22 +24,39 @@ h3 {
   padding-bottom: 5px;
 }
 
-.date {
-  padding-bottom: 2px;
-}
+/* Buttons */
 
-.submit-btn, .add-btn, .edit-btn, .print-btn {
+/* Universal button styles */
+.btn {
   background-color: lightgray;
   height: 40px;
   width: 80px;
   border-style:dashed;
 }
 
-.submit-btn:hover, .add-btn:hover, .edit-btn:hover, .print-btn:hover {
+/* Universal button hover styles */
+.btn:hover {
   cursor: pointer;
   background-color:gray;
 }
 
+/* Container with a submit-btn in it */
+.submit-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container with an add btn in it */
+.add-btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Hide buttons when user clicks Print Preview */
 .print-mode .submit-btn,
 .print-mode .add-btn,
 .print-mode .edit-btn {
@@ -46,39 +65,14 @@ h3 {
 
 /* Hide buttons when printing */
 @media print {
-  .submit-btn {
+  .btn {
     display: none;
   }
+}
 
-  .add-btn {
-    display: none;
-  }
-
-  .edit-btn {
-    display: none;
-  }
-
+.date {
+  padding-bottom: 2px;
 }
 
 
-.submit-btns {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.btns {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-/* Sends edit btn to the far right for each job */
-/* Padding-right makes sure edit and add btns don't touch */
-.display-job {
-  display: flex;
-  justify-content: space-between;
-  padding-right: 20px;
-}
 

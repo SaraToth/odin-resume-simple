@@ -13,26 +13,26 @@ export default function Experience() {
     return(
         <div className="experience-container">
             <div className="jobs-container">
-            <h2>Professional Experience</h2>
-            {jobs && jobs.map((job)=> 
-                {   
-                    return(
-                        // Key needs to be updated to UUID
-                        <div className="display-job" key={job.title}>
-                            <div>
-                                <h3>{job.title} at {job.company}</h3>
-                                <p className="date"><i>{job.startDate} - {job.endDate}</i></p>
-                                <p className="job-desc">{job.description}</p>
+                <h2>Professional Experience</h2>
+                {jobs && jobs.map((job)=> 
+                    {   
+                        return(
+                            // Key needs to be updated to UUID
+                            <div className="display-job" key={job.title}>
+                                <div>
+                                    <h3>{job.title} at {job.company}</h3>
+                                    <p className="date"><i>{job.startDate} - {job.endDate}</i></p>
+                                    <p className="job-desc">{job.description}</p>
+                                </div>
+                                <button type="submit" className="btn edit-btn">Edit</button> 
                             </div>
-                            <button type="submit" className="edit-btn">Edit</button> 
-                        </div>
-                    )
-                }
-                )}
-            {showJobForm && <Job setJobs={setJobs} setShowJobForm={setShowJobForm} />}
+                        )
+                    }
+                    )}
+                {showJobForm && <Job setJobs={setJobs} setShowJobForm={setShowJobForm} />}
             </div>
-            <div className="btns">
-                <button type="submit" className="add-btn" onClick={handleJobForm}>Add</button>
+            <div className="add-btn-container">
+                <button type="submit" className="btn add-btn" onClick={handleJobForm}>Add</button>
             </div>
         </div>
     )

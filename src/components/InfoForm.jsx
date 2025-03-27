@@ -71,7 +71,7 @@ export default function InfoForm({setGenInfo, setShowGenInfoForm}) {
                     </div>
                 </div>
                 <div className="form-btn">
-                    <button type="submit" className="submit-btn">Submit</button>
+                    <button type="submit" className="btn submit-btn">Submit</button>
                 </div>
             </form>
         </div>
