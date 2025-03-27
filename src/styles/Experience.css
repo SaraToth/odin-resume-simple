@@ -9,6 +9,22 @@
   flex: 1;
 }
 
+.form-job {
+  display: flex;
+  flex-direction: column;
+  padding-right: 100px;  /* visual space between form and add button */
+}
+
+/* Sends edit btn to the far right for each job */
+/* Padding-right makes sure edit and add btns don't touch */
+.display-job {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+
 .job-desc {
   padding-bottom: 10px;
 }
+
+

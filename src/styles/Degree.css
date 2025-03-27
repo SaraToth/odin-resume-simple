@@ -1,5 +1,5 @@
 
-.form-container-degree form {
+.form-degree {
     display: flex;
     flex-direction: column;
 }
