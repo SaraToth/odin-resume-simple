@@ -33,6 +33,10 @@ npm install
 Then run the following command to launch the local server:
 ```
 npm run dev
-````
+```
 
 And you can view the live server at http://localhost:5173/
+
+## Known issues
+
+At this time, the edit button is rendered correctly on screen but its funtionality is not yet created.
