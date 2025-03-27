@@ -10,21 +10,26 @@ export default function Education() {
         setShowDegreeForm(true);
     }
     return(
-        <div className="form-container-education">
-            <h2>Education</h2>
-            <div>
+        <div className="education-container">
+            <div className="degrees-container">
+                <h2>Education</h2>
                 {degrees && degrees.map((degree)=> {
                     return(
                         // Key needs to be updated to UUID
-                        <div className="degree item-container-degree" key={degree.degree}>
-                            <h3>{degree.degree}</h3>
-                            <p>{degree.school} <i>{degree.gradDate}</i></p>
+                        <div className="display-degree" key={degree.degree}>
+                            <div>
+                                <h3>{degree.degree}</h3>
+                                <p>{degree.school} <i>{degree.gradDate}</i></p>
+                            </div>
+                            <button type="submit" className="edit-btn">Edit</button> 
                         </div>
                     )
                 })}
+                {showDegreeForm && <Degree setDegrees={setDegrees} setShowDegreeForm={setShowDegreeForm} />}
             </div>
-            {showDegreeForm && <Degree setDegrees={setDegrees} setShowDegreeForm={setShowDegreeForm} />}
-            <button type="submit" className="add-btn" onClick={handleDegreeForm}>Add</button>
+            <div className="btns">
+                <button type="submit" className="add-btn" onClick={handleDegreeForm}>Add</button>
+            </div>
         </div>
     )
 
