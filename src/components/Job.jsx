@@ -13,10 +13,13 @@ export default function Job({setJobs, setShowJobForm, }) {
     )
 
     const handleChange = (e) => {
+        const UUID = crypto.randomUUID();
         const newFormData = {
             ...job,
             [e.target.name]: e.target.value,
+            jobID: UUID,
         }
+
         setJob(newFormData);
     }
 

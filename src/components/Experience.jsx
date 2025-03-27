@@ -18,7 +18,7 @@ export default function Experience() {
                     {   
                         return(
                             // Key needs to be updated to UUID
-                            <div className="display-job" key={job.title}>
+                            <div className="display-job" key={job.jobID}>
                                 <div className="job-info">
                                     <div className="row">
                                         <p><b>{job.title},</b> <i>{job.company}</i></p>
@@ -33,7 +33,6 @@ export default function Experience() {
                                         )}
                                     </ul>
                                         </p>
-                                        {/* {job.description}</p> */}
                                 </div>
                                 <div className="edit-btn-container">
                                     <button type="submit" className="btn edit-btn">Edit</button> 
