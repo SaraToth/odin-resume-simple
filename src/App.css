@@ -1,14 +1,18 @@
-/* General Styles */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  padding: 25px 25px;
+  padding: 50px 50px;
 }
 
 h1 {
@@ -16,17 +20,27 @@ h1 {
 }
 
 h2 {
-  padding-top: 20px;
-  padding-bottom: 10px;
+  font-size: 18.72px;
+  padding-bottom: 5px;
 }
 
 h3 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 18.72px;
+}
+
+h4 {
   padding-bottom: 5px;
+}
+
+/* Employment dates and graduation date */
+.date {
+  padding-bottom: 2px;
 }
 
 /* Buttons */
 
-/* Universal button styles */
 .btn {
   background-color: lightgray;
   height: 40px;
@@ -34,10 +48,15 @@ h3 {
   border-style:dashed;
 }
 
-/* Universal button hover styles */
 .btn:hover {
   cursor: pointer;
   background-color:gray;
+}
+
+.print-btn-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
 }
 
 /* Container with a submit-btn in it */
@@ -45,6 +64,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 20px;
 }
 
 /* Container with an add btn in it */
@@ -54,6 +74,13 @@ h3 {
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+
+/* Container with an edit btn in it */
+.edit-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Hide buttons when user clicks Print Preview */
@@ -69,10 +96,3 @@ h3 {
     display: none;
   }
 }
-
-.date {
-  padding-bottom: 2px;
-}
-
-
-

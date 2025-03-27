@@ -15,14 +15,17 @@ export default function GenInfo() {
                     <div className="display-info" key={genInfo.title}> 
                         <div>
                             <h1>{genInfo.first} {genInfo.last}</h1>
-                            <h3>{genInfo.title}</h3>
-                            <p>{genInfo.phone} {genInfo.email}</p>
+                            <h2>{genInfo.title}</h2>
+                            <p>{genInfo.phone}</p>
+                            <p>{genInfo.email}</p>
                         </div>
-                        <button type="submit" className="btn edit-btn">Edit</button>
+                        <div className="edit-btn-container">
+                            <button type="submit" className="btn edit-btn">Edit</button>
+                        </div>
                     </div>
                 }
+                {showGenInfoForm && <InfoForm setGenInfo={setGenInfo} setShowGenInfoForm={setShowGenInfoForm} />}      
             </div>
-            {showGenInfoForm && <InfoForm setGenInfo={setGenInfo} setShowGenInfoForm={setShowGenInfoForm} />}      
         </div>
     )
 }

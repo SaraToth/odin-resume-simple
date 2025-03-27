@@ -35,11 +35,10 @@ export default function InfoForm({setGenInfo, setShowGenInfoForm}) {
     }
 
     return(
-        <div className="form-info">
-            <form onSubmit={submitInfo}>
-                <h1>Resume</h1>
-                <div className="form-content">
-
+        <form className="form-info" onSubmit={submitInfo}>
+            <h1>Resume</h1>
+            <div className="form-content">
+                <div className="form-content-container">
                     <div className="form-row">
                         <div className="form-item">
                             <label htmlFor="first">First Name:</label>
@@ -69,11 +68,11 @@ export default function InfoForm({setGenInfo, setShowGenInfoForm}) {
                         <label htmlFor="title">Job Title:</label>
                         <input type="text" id="title" name="title" value={info.title} onChange={handleChange} required></input>
                     </div>
+                    <div className="submit-btn-container">
+                        <button type="submit" className="btn submit-btn">Submit</button>
+                    </div>
                 </div>
-                <div className="form-btn">
-                    <button type="submit" className="btn submit-btn">Submit</button>
-                </div>
-            </form>
-        </div>
+            </div>
+        </form>
     )
 }

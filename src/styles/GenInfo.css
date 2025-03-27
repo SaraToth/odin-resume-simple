@@ -1,18 +1,40 @@
-
-
-.form {
+/* Form to enter general info */
+.form-info {
     display: flex;
     flex-direction: column;
 }
 
-.form-row {
-    display: flex;
-    /* justify-content: space-between; */
-    /* gap is temporary */
-    gap: 20px; 
+/* h1 for Resume but not for name */
+.form-info h1 {
+    padding-bottom: 20px;
 }
 
+/* Keeps InfoForm job title and submit btn aligned with other form inputs */
+.form-content {
+    /* align-self: flex-start;  */
+    display: flex;
+    align-items: center;
+}
+
+.form-content-container {
+    border: 1px solid lightgray;
+    padding: 20px 20px;
+}
+
+/* Container that displays the general info */
+.display-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Create columns for InfoForm */
 .form-item {
     display: flex;
     flex-direction: column;
+}
+
+/* Create space between InfoForm items in a row */
+.form-row {
+    display: flex;
+    gap: 50px;
 }

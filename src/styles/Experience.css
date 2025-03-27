@@ -1,6 +1,5 @@
 /* Professional Experience Section */
 .experience-container {
-  border: 1px solid;
   display: flex;
   min-height: 100px; /* Height when empty */
 }
@@ -15,13 +14,22 @@
   display: flex;
   flex-direction: column;
   padding-right: 100px;  /* visual space between form and add button */
+  border: 1px solid lightgray;
+  margin-right: 40px;
+  padding: 20px;
 }
 
 /* Container for each provided job */
 .display-job {
   display: flex;
   justify-content: space-between;
+  margin-right: 40px;
   padding-right: 20px;
+
+  padding-top: 10px;
+  border: 1px solid lightgray;
+  padding-left: 20px;
+  margin-bottom: 20px;
 }
 
 /* Description under each job */
@@ -29,4 +37,16 @@
   padding-bottom: 10px;
 }
 
+.print-mode .display-job {
+  border: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
 
+@media print {
+  .display-job {
+    border: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+}

@@ -36,17 +36,28 @@ export default function Job({setJobs, setShowJobForm, }) {
 
     return(
             <form className="form-job" onSubmit={submitJob}>
-            <label htmlFor="title">Title:</label>
-                <input type="text" id="title" name="title" value={job.title} onChange={handleChange} required></input>
+                <div className="form-row">
+                    <div className="form-item">
+                        <label htmlFor="title">Title:</label>
+                        <input type="text" id="title" name="title" value={job.title} onChange={handleChange} required></input>
+                    </div>
 
-                <label htmlFor="company">Company:</label>
-                <input type="text" id="company" name="company" value={job.company} onChange={handleChange} required></input>
+                    <div className="form-item">
+                        <label htmlFor="company">Company:</label>
+                        <input type="text" id="company" name="company" value={job.company} onChange={handleChange} required></input>
+                    </div>
+                </div>
 
-                <label htmlFor="start">Start Date:</label>
-                <input type="date" id="start" name="startDate" value={job.startDate} onChange={handleChange} required></input>
-
-                <label htmlFor="end">End Date:</label>
-                <input type="date" id="end" name="endDate" value={job.endDate} onChange={handleChange} required></input>
+                <div className="form-row">
+                    <div className="form-item">
+                        <label htmlFor="start">Start Date:</label>
+                        <input type="date" id="start" name="startDate" value={job.startDate} onChange={handleChange} required></input>
+                    </div>
+                    <div className="form-item">
+                        <label htmlFor="end">End Date:</label>
+                        <input type="date" id="end" name="endDate" value={job.endDate} onChange={handleChange} required></input>
+                    </div>
+                </div>
                 
                 <textarea name="description" id="description" value={job.description} onChange={handleChange} required placeholder="Type your job description here"></textarea>
                 <div className="submit-btn-container">

@@ -12,13 +12,13 @@ export default function Education() {
     return(
         <div className="education-container">
             <div className="degrees-container">
-                <h2>Education</h2>
+                <h3>Education</h3>
                 {degrees && degrees.map((degree)=> {
                     return(
                         // Key needs to be updated to UUID
                         <div className="display-degree" key={degree.degree}>
                             <div>
-                                <h3>{degree.degree}</h3>
+                                <h4>{degree.degree}</h4>
                                 <p>{degree.school} <i>{degree.gradDate}</i></p>
                             </div>
                             <button type="submit" className="btn edit-btn">Edit</button> 

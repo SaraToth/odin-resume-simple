@@ -5,5 +5,10 @@
 }
 
 .summary {
-    padding: 10px 0;
+    padding-top: 25px;
+}
+
+#summary {
+    border-color: lightgray;
+    padding: 10px;
 }
