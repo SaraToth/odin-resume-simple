@@ -3,6 +3,7 @@ import GenInfo from './components/GenInfo'
 import Summary from './components/Summary'
 import Experience from './components/Experience'
 import Education from './components/Education'
+import Projects from './components/Projects'
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <div className={`resume`}>
         <GenInfo />
         <Summary />
+        <Projects />
         <Experience />
         <Education />
         <div className="print-preview">

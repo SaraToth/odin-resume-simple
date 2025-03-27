@@ -1,0 +1,55 @@
+/* Professional Experience Section */
+.allprojects-container {
+    display: flex;
+    min-height: 100px; /* Height when empty */
+  }
+  
+  /* Holds all jobs content */
+  .projects-container {
+    flex: 1;
+  }
+  
+  /* Form to enter a new job */
+  .form-project {
+    display: flex;
+    flex-direction: column;
+    padding-right: 100px;  /* visual space between form and add button */
+    border: 1px solid lightgray;
+    margin-right: 40px;
+    padding: 20px;
+  }
+  
+  /* Container for each provided job */
+  .display-project {
+    display: flex;
+    gap: 20px;
+    margin-right: 40px;
+    padding-right: 20px;
+  
+    padding-top: 10px;
+    border: 1px solid lightgray;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .project-info {
+    flex: 1;
+  }
+  
+  /* Description under each job */
+  .project-desc {
+    padding-bottom: 10px;
+  }
+  
+  @media print {
+    .display-project {
+      border: none;
+      padding-left: 0;
+      margin-bottom: 0;
+      padding-right: 0;
+      margin-right: 0;
+      flex: 1;
+      gap: 0;
+    }
+  }
+  
