@@ -40,6 +40,16 @@
   .project-desc {
     padding-bottom: 10px;
   }
+
+  #project-desc {
+    padding-top: 10px;
+  }
+
+  #project-desc textarea {
+    width: 100%;
+    border: 1px solid lightgray;
+    padding: 10px;
+  }
   
   @media print {
     .display-project {

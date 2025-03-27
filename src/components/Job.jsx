@@ -36,6 +36,7 @@ export default function Job({setJobs, setShowJobForm, }) {
 
     return(
             <form className="form-job" onSubmit={submitJob}>
+                <div className="form">
                 <div className="form-row">
                     <div className="form-item">
                         <label htmlFor="title">Title:</label>
@@ -59,9 +60,12 @@ export default function Job({setJobs, setShowJobForm, }) {
                     </div>
                 </div>
                 
-                <textarea name="description" id="description" value={job.description} onChange={handleChange} required placeholder="Type your job description here"></textarea>
+                <div className="form-row" id="form-desc">
+                    <textarea name="description" id="description" value={job.description} onChange={handleChange} required placeholder="Type your job description here, press enter to indicate a new bullet point"></textarea>
+                </div>
                 <div className="submit-btn-container">
                     <button type="submit" className="btn submit-btn">Submit</button>
+                </div>
                 </div>
             </form>
     )

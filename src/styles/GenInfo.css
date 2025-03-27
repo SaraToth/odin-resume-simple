@@ -19,6 +19,9 @@
 .form-content-container {
     border: 1px solid lightgray;
     padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 /* Container that displays the general info */

@@ -34,17 +34,27 @@ export default function Degree({setDegrees, setShowDegreeForm }) {
 
     return(
             <form className="form-degree" onSubmit={submitDegree}>
-                <label htmlFor="degree">Degree</label>
-                <input type="text" id="degree" name="degree" value={degree.degree} onChange={handleChange} required></input>
-
-                <label htmlFor="school">School</label>
-                <input type="text" id="school" name="school" value={degree.school} onChange={handleChange} required></input>
-
-                <label htmlFor="gradDate">Graduation Date</label>
-                <input type="date" id="gradDate" name="gradDate" value={degree.gradDate} onChange={handleChange} required></input>
-
-                <div className="submit-btn-container">
+                <div className="form">
+                    <div className="form-row">
+                        <div className="form-item">
+                            <label htmlFor="degree">Degree</label>
+                            <input type="text" id="degree" name="degree" value={degree.degree} onChange={handleChange} required></input>
+                        </div>
+                        <div className="form-item">
+                            <label htmlFor="school">School</label>
+                            <input type="text" id="school" name="school" value={degree.school} onChange={handleChange} required></input>
+                        </div>
+                    </div>
+                    <div className="form-row grad-date">
+                        <div className="form-item">
+                            <label htmlFor="gradDate">Graduation Date</label>
+                            <input type="date" id="gradDate" name="gradDate" value={degree.gradDate} onChange={handleChange} required></input>
+                        </div>
+                        <div className="form-item blank"></div>
+                    </div>
+                    <div className="submit-btn-container">
                     <button type="submit" className="btn submit-btn">Submit</button>
+                </div>
                 </div>
             </form>
     )

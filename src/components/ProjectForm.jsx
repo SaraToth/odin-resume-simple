@@ -36,6 +36,7 @@ export default function ProjectForm({setProjects, setShowProjectForm, }) {
 
     return(
             <form className="form-project" onSubmit={submitProject}>
+                <div className="form">
                 <div className="form-row">
                     <div className="form-item">
                         <label htmlFor="name">Project Name:</label>
@@ -59,9 +60,13 @@ export default function ProjectForm({setProjects, setShowProjectForm, }) {
                     </div>
                 </div>
                 
-                <textarea name="description" id="description" value={project.description} onChange={handleChange} required placeholder="Type your job description here"></textarea>
+                <div className="form-row" id="project-desc">
+                <textarea name="description" id="description" value={project.description} onChange={handleChange} required placeholder="Type your project description here, press enter to indicate a new bullet point"></textarea>
+                </div>
+            
                 <div className="submit-btn-container">
                     <button type="submit" className="btn submit-btn">Submit</button>
+                </div>
                 </div>
             </form>
     )

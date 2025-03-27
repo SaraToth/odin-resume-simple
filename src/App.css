@@ -58,6 +58,7 @@ h4 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 20px;
 }
 
 /* Container with a submit-btn in it */
@@ -106,4 +107,19 @@ li {
 .row {
   display: flex;
   justify-content: space-between;
+}
+
+.form-item {
+  flex: 1;
+}
+
+.form {
+  margin-right: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  margin-top: 2px;
 }
